@@ -9,7 +9,7 @@ easyBtn.addEventListener("click", function () {
   // aggiungiamo un ciclo inserire gli elementi
   for (i = 1; i < 101; i++) {
     //creo un nuovo square
-    const newSquare = createElement("div", "square");
+    const newSquare = createElement("div", "square10");
     // creo una variabile per stampare in console il numero della cella che viene cliccata
     const squareNum = "Il numero della cella è: " + i;
 
@@ -30,7 +30,7 @@ mediumBtn.addEventListener("click", function () {
   // aggiungiamo un ciclo per inserire gli elementi
   for (i = 1; i < 82; i++) {
     //creo un nuovo square
-    const newSquare = createElement("div", "square");
+    const newSquare = createElement("div", "square9");
     // creo una variabile per stampare in console il numero della cella che viene cliccata
     const squareNum = "Il numero della cella è: " + i;
 
@@ -51,7 +51,7 @@ difficultBtn.addEventListener("click", function () {
   // aggiungiamo un ciclo inserire gli elementi
   for (i = 1; i < 50; i++) {
     //creo un nuovo square
-    const newSquare = createElement("div", "square");
+    const newSquare = createElement("div", "square7");
     // creo una variabile per stampare in console il numero della cella che viene cliccata
     const squareNum = "Il numero della cella è: " + i;
 
