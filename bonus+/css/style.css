@@ -20,6 +20,21 @@ h1 {
   margin-top: 30px;
 }
 
+h2 {
+  color: #ff6b08;
+}
+
+.difficulty-btn {
+  margin-top: 20px;
+}
+
+.difficulty-btn button {
+  border: none;
+  background-color: lightgreen;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
 .play-btn {
   border: none;
   background: lightcoral;
