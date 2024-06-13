@@ -28,6 +28,13 @@ h2 {
   margin-top: 20px;
 }
 
+#easy:hover,
+#medium:hover,
+#difficult:hover {
+  background-color: lightcoral;
+  color: #fff;
+}
+
 .difficulty-btn button {
   border: none;
   background-color: lightgreen;

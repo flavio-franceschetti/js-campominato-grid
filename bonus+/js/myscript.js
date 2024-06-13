@@ -4,68 +4,26 @@ const gridContainer = document.querySelector(".grid-container");
 const easyBtn = document.getElementById("easy");
 const mediumBtn = document.getElementById("medium");
 const difficultBtn = document.getElementById("difficult");
-
+//aggiungo un evento al bottone easy
 easyBtn.addEventListener("click", function () {
-  // aggiungiamo un ciclo inserire gli elementi
-  for (i = 1; i < 101; i++) {
-    //creo un nuovo square
-    const newSquare = createElement("div", "square10");
-    // creo una variabile per stampare in console il numero della cella che viene cliccata
-    const squareNum = "Il numero della cella è: " + i;
-
-    // aggiungo un evento al click ad ogni nuovo box
-    newSquare.addEventListener("click", function () {
-      // aggiungo la classe per dare il colore ad ogni cella che viene cliccata
-      newSquare.classList.add("clicked");
-      // stampo in console il numero della cella che viene cliccata
-      console.log(squareNum);
-    });
-
-    // inserisco il nuovo square nel mio container html
-    gridContainer.append(newSquare);
-  }
+  // funzione per cambiare colore al bottone quando viene cliccato
+  colorBtn(easyBtn, "lightcoral", "white");
+  // funzione per creare la griglia in base alla difficoltà selezionata
+  setupDifficultyGrid(101, "div", "square10");
 });
-
+//aggiungo un evento al bottone medium
 mediumBtn.addEventListener("click", function () {
-  // aggiungiamo un ciclo per inserire gli elementi
-  for (i = 1; i < 82; i++) {
-    //creo un nuovo square
-    const newSquare = createElement("div", "square9");
-    // creo una variabile per stampare in console il numero della cella che viene cliccata
-    const squareNum = "Il numero della cella è: " + i;
-
-    // aggiungo un evento al click ad ogni nuovo box
-    newSquare.addEventListener("click", function () {
-      // aggiungo la classe per dare il colore ad ogni cella che viene cliccata
-      newSquare.classList.add("clicked");
-      // stampo in console il numero della cella che viene cliccata
-      console.log(squareNum);
-    });
-
-    // inserisco il nuovo square nel mio container html
-    gridContainer.append(newSquare);
-  }
+  // funzione per cambiare colore al bottone quando viene cliccato
+  colorBtn(mediumBtn, "lightcoral", "white");
+  // funzione per creare la griglia in base alla difficoltà selezionata
+  setupDifficultyGrid(82, "div", "square9");
 });
-
+//aggiungo un evento al bottone difficult
 difficultBtn.addEventListener("click", function () {
-  // aggiungiamo un ciclo inserire gli elementi
-  for (i = 1; i < 50; i++) {
-    //creo un nuovo square
-    const newSquare = createElement("div", "square7");
-    // creo una variabile per stampare in console il numero della cella che viene cliccata
-    const squareNum = "Il numero della cella è: " + i;
-
-    // aggiungo un evento al click ad ogni nuovo box
-    newSquare.addEventListener("click", function () {
-      // aggiungo la classe per dare il colore ad ogni cella che viene cliccata
-      newSquare.classList.add("clicked");
-      // stampo in console il numero della cella che viene cliccata
-      console.log(squareNum);
-    });
-
-    // inserisco il nuovo square nel mio container html
-    gridContainer.append(newSquare);
-  }
+  // funzione per cambiare colore al bottone quando viene cliccato
+  colorBtn(difficultBtn, "lightcoral", "white");
+  // funzione per creare la griglia in base alla difficoltà selezionata
+  setupDifficultyGrid(50, "div", "square7");
 });
 
 // richiamiamo in una variabile il bottone per iniziare il gioco
