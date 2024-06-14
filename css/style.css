@@ -45,6 +45,10 @@ h1 {
   cursor: crosshair;
 
   border: 2px solid #fff;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  align-content: center;
 }
 
 .show-grid {

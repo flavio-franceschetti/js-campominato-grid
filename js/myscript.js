@@ -5,6 +5,7 @@ const gridContainer = document.querySelector(".grid-container");
 for (i = 1; i < 101; i++) {
   //creo un nuovo square
   const newSquare = createElement("div", "square");
+  newSquare.innerHTML = i;
   // creo una variabile per stampare in console il numero della cella che viene cliccata
   const squareNum = "Il numero della cella è: " + i;
 
