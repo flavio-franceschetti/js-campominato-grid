@@ -2,7 +2,7 @@
 const gridContainer = document.querySelector(".grid-container");
 
 // aggiungiamo un ciclo fino a 100 per inserire gli elementi
-for (i = 1; i < 101; i++) {
+for (let i = 1; i < 101; i++) {
   //creo un nuovo square
   const newSquare = createElement("div", "square");
   newSquare.innerHTML = i;
