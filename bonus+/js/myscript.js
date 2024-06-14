@@ -1,9 +1,11 @@
 // richiamiamo il grid container in una variabile
 const gridContainer = document.querySelector(".grid-container");
+
 // recuper tutti i bottoni per la selezione della difficoltà
 const easyBtn = document.getElementById("easy");
 const mediumBtn = document.getElementById("medium");
 const difficultBtn = document.getElementById("difficult");
+
 //aggiungo un evento al bottone easy
 easyBtn.addEventListener("click", function () {
   // funzione per cambiare colore al bottone quando viene cliccato
@@ -11,6 +13,7 @@ easyBtn.addEventListener("click", function () {
   // funzione per creare la griglia in base alla difficoltà selezionata
   setupDifficultyGrid(101, "div", "square10");
 });
+
 //aggiungo un evento al bottone medium
 mediumBtn.addEventListener("click", function () {
   // funzione per cambiare colore al bottone quando viene cliccato
@@ -18,6 +21,7 @@ mediumBtn.addEventListener("click", function () {
   // funzione per creare la griglia in base alla difficoltà selezionata
   setupDifficultyGrid(82, "div", "square9");
 });
+
 //aggiungo un evento al bottone difficult
 difficultBtn.addEventListener("click", function () {
   // funzione per cambiare colore al bottone quando viene cliccato

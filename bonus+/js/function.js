@@ -5,8 +5,12 @@ function createElement(tag, classToAdd) {
   return square;
 }
 
+// variabile per delezionare la difficoltà nella griglia
+let selectedDifficulty;
+
 // funzione per creare una griglia in base alla difficoltà selezionata
 function setupDifficultyGrid(cellNum, tag, classToAdd) {
+  gridContainer.innerHTML = "";
   // aggiungiamo un ciclo inserire gli elementi
   for (i = 1; i < cellNum; i++) {
     //creo un nuovo square
